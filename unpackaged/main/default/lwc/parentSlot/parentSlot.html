@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Slots">
+        <c-child-slot>
+            <!-- This is unnamed or default slat -->
+            <p>Markup passes from parent to child component</p>
+            <!-- This is Named slot -->
+            <ul slot="contactInfo">
+                <template for:each={contacts} for:item="con">
+                    <li key={con.name}>Name : {con.name},Age :{con.age}</li>
+                </template>
+            </ul>
+            <p slot="information">This is @ information slot</p>
+        </c-child-slot>
+    </lightning-card>
+</template>

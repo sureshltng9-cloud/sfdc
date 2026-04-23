@@ -1,0 +1,15 @@
+<apex:page standardController="Account" sidebar="false" recordSetVar="accs">
+    <apex:form >
+        <apex:pageblock title="SF">
+            <apex:image value="{!$Resource.SalesforceLogo}" height="100" width="180"/>
+        </apex:pageblock>
+        <apex:pageMessages showDetail="true"></apex:pageMessages>
+        <apex:pageMessage severity="info" strength="1" summary="Page Message Here"></apex:pageMessage>
+        <apex:dataTable value="{!accs}" var="ac" border="1">
+            <apex:column >
+                <apex:facet name="header">Acc Name</apex:facet>
+                {!ac.Name}
+            </apex:column>
+        </apex:dataTable>
+    </apex:form>
+</apex:page>

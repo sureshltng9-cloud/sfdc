@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="SLDS Data Table">
+        <div class="slds-m-around_medium">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered" >
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Account Name">Account Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Rating">Rating</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Rating">Industry</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Annual Revenue">Annual Revenue</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={accounts} for:item="accs">
+                        <tr key={accs.id} class="slds-hint-parent" >
+                            <td>
+                                <div class="slds-truncate">{accs.Name}</div>
+                            </td>
+                            <td>
+                                <div class="slds-truncate">{accs.Rating}</div>
+                            </td>
+                            <td>
+                                <div class="slds-truncate">{accs.Industry}</div>
+                            </td>
+                            <td>
+                                <div class="slds-truncate">{accs.AnnualRevenue}</div>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>

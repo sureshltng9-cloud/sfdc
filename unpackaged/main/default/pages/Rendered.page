@@ -1,0 +1,15 @@
+<apex:page Controller="AccountCont" sidebar="false">
+    <apex:form >
+        <apex:pageBlock title="Show & Hide functionality"  id="acc">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Show" action="{!show}" reRender="acc"/>
+                <apex:commandButton value="Hide" action="{!hide}" reRender="acc"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account Info" rendered="{!show}">
+                <apex:outputField value="{!acc.Name}"/>
+                <apex:outputField value="{!acc.Rating}"/>
+                <apex:outputField value="{!acc.Industry}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

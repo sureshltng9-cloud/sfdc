@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Student</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Students</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Student Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cand Number Should be in a Format &apos;[0-9]{4}-[0-9]{4}-[0-9]{4}&apos; --></errorMessage>
+        <name>Card_Number_Expression</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Couse Should be Slected --></errorMessage>
+        <name>Course_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fee should be more than 500 --></errorMessage>
+        <name>Fee_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone Number Shoud Start With &apos;+&apos; Symbol --></errorMessage>
+        <name>Phone_Number_Starts_With_Pluse</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Address Should Contain Pincode --></errorMessage>
+        <name>Pincode_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- State Should be Selected If You Select Country --></errorMessage>
+        <name>State_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You Can&apos;t Select Wales --></errorMessage>
+        <name>State_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

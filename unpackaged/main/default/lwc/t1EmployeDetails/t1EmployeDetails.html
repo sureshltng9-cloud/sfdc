@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="FROm Component1">
+        <div class="slds-var-m-left_small">
+            <lightning-input label="First Name" onchange={fisrtHandler}></lightning-input>
+            <lightning-input label="Last Name" onchange={secondHandler}></lightning-input>
+            <lightning-input label="Phone" onchange={phoneHandler}></lightning-input>
+            <lightning-button class="slds-var-m-top_small" label="Create Contact" variant="success" onclick={calculateHandler}></lightning-button>
+        </div>
+        <div class="slds-var-m-top_small">
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                    <lightning-formatted-text value={conFirstName}></lightning-formatted-text>
+                    <lightning-formatted-text value={conLastName}></lightning-formatted-text>
+                    <lightning-formatted-text value={conPhone}></lightning-formatted-text>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>

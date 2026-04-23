@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Display_Color__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( Country__c , &#39;India&#39;), &#39;Indiagreen&#39;,
+IF(ISPICKVAL( Country__c , &#39;UK&#39;), &#39;UKgreen&#39;, 
+IF(ISPICKVAL( Country__c , &#39;USA&#39;),&#39;USAgreen&#39;, &#39;red&#39;)) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Display Color</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

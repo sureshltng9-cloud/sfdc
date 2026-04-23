@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Card_Number_Expression</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( REGEX( Crad_Number__c , &#39;[0-9]{4}-[0-9]{4}-[0-9]{4}&#39;) )</errorConditionFormula>
+    <errorMessage>Cand Number Should be in a Format &#39;[0-9]{4}-[0-9]{4}-[0-9]{4}&#39;</errorMessage>
+</ValidationRule>

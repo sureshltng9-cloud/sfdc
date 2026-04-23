@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Employee Details" >
+        <div class="slds-m-around_medium">
+            <p>Employee Name : {name}</p>
+            <p>Employee Age : {age}</p>
+            <p>Employee Designation : {designation}</p>
+            <lightning-input label="Enter Name" value={name} onchange={nameHandler}></lightning-input>
+            <lightning-input label="Enter Age" value={age} onchange={ageHandler}></lightning-input>
+            <lightning-input label="Enter Designation" value={designation} onchange={desgHandler}></lightning-input>
+        </div>
+    </lightning-card>
+</template>

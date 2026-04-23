@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Lightning Data Table  Wired">
+        <div class="slds-box slds-var-m-around_small">
+            <!--<table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <template for:each={cts} for:item="cont">
+                    <tr key={cont.id}>
+                        <td>{cont.FirstName}</td>
+                        <td>{cont.LastName}</td>
+                    </tr>
+                </template>
+            </table>-->
+            <lightning-datatable 
+            key-field="Id"
+            data={cts.data}
+            columns={columns}
+            draft-values={draftValues}
+            onsave={saveHandler}></lightning-datatable>
+            
+        </div>
+    </lightning-card>
+</template>

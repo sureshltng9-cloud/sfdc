@@ -1,0 +1,19 @@
+<apex:page controller="SelectCon">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:outputText >Select Country</apex:outputText>
+                <apex:selectList value="{!selectCountry}" multiselect="false" size="1">
+                    <apex:selectOption itemLabel="none" itemValue="--none--"></apex:selectOption>
+                    <apex:selectOption itemLabel="India" itemValue="India"></apex:selectOption>
+                    <apex:selectOption itemLabel="USA" itemValue="USA"></apex:selectOption>
+                    <apex:actionSupport event="onchange" reRender="pb"/>
+                </apex:selectList>
+                <apex:outputText >Select State</apex:outputText>
+                <apex:selectList value="{!selectState}" multiselect="false" size="1" id="pb">
+                    <apex:selectOptions value="{!options}"></apex:selectOptions>
+                </apex:selectList>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

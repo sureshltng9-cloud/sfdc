@@ -1,0 +1,14 @@
+<apex:page >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:actionRegion >
+                <apex:outputLabel value="Show The Current Time" style="color:green">
+                    <apex:actionSupport event="onclick" reRender="pb"/>
+                </apex:outputLabel>
+            </apex:actionRegion>
+            <apex:pageBlocksection id="pb">
+            <apex:outputText value="{!text(now())}"></apex:outputText>
+        </apex:pageBlocksection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

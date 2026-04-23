@@ -1,0 +1,28 @@
+<apex:page controller="AccCon">
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+    </style>
+     <apex:pageBlock >
+         <table>
+             <tr>
+                 <th>First Name</th>
+                 <th>Last Name</th>
+                 <th>Email Name</th>
+             </tr>
+             <apex:repeat value="{!cons}" var="con">
+                 <tr>
+                     <td>{!con.FirstName}</td>
+                     <td>{!con.LastName}</td>
+                     <td>{!con.Email}</td>
+                 </tr>
+             </apex:repeat>
+         </table>
+     </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Number_Starts_With_Pluse</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEFT( Phone__c , 1)  &lt;&gt; &#39;+&#39;</errorConditionFormula>
+    <errorMessage>Phone Number Shoud Start With &#39;+&#39; Symbol</errorMessage>
+</ValidationRule>

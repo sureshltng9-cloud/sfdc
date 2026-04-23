@@ -1,0 +1,10 @@
+Hello {!Contact.FirstName} {!Contact.LastName}
+
+New Contact is Created.
+
+Check Below Link.
+
+
+{!Contact.Link}
+
+                                                                                                                Thank You

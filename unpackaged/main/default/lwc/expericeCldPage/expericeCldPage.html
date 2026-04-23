@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Community User Page">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-medium" size="6">
+                <div class="slds-var-m-around_medium">
+                    <lightning-input label="Enater Name" value={value} onchange={chgHandler}></lightning-input>
+                    <div class="slds-var-m-top_medium">
+                        <p>{value}</p>
+                        <p>{pds}</p>
+                        <p>{nds}</p>
+                    </div>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

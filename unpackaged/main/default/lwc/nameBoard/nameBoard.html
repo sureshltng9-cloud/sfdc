@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="God">
+        <b><p class="slds-var-p-horizontal_small" style="color:rgb(255, 123, 0)">Lard Ganesha</p></b>
+    </lightning-card>
+    <lightning-card title="Greetings">
+        <div class="slds-var-m-around_medium slds-box slds-grid slds-wrap">
+            <div class="slds-col slds-size_4-of-12 slds-var-m-bottom_medium slds-align_absolute-center">
+                <lightning-input label="Search" placeholder="Text"></lightning-input>
+            </div>
+            <div class="slds-col slds-size_12-of-12">
+                <lightning-datatable key-field="Id" data={data} columns={columns} hide-checkbox-column="true" draft-values={draftValues} onsave={saveChange}></lightning-datatable>
+            </div>
+        </div>
+        <div>
+            {greentings}
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="All Contact Details">
+        <lightning-input label="Enter Number of Records" type="number" onchange={numberHandler}></lightning-input>
+        <lightning-button label="Get Contacts" onclick={getContacts}></lightning-button>
+        <template if:true={responseRecivede}>
+            <ul>
+                <template for:each={contacts} for:item="con">
+                    <li key={con.id} style="padding:10px">
+                        <div class="slds-p-around_medium lgc-bg">
+                            <lightning-tile label={con.LastName}>
+                                <p class="slds-truncate" title={con.Phone}>{con.Phone}</p>
+                            </lightning-tile>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </template>
+    </lightning-card>
+</template>

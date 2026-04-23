@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Publisher">
+        <lightning-layout>
+            <lightning-layout-item size="4" padding="around-small">
+                <ul>
+                    <template for:each={meetingRoomInfo} for:item="room">
+                        <li key={room.name}  style="padding:10px">
+                            <lightning-tile label={room.name} href="/path/to/somewhere" class="lgc-bg" onclick={roomHandler}>
+                                <p class="slds-truncate" title={room.capacity}>Room Capacity:{room.capacity}</p>
+                            </lightning-tile>        
+                        </li>
+                    </template>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size="8" padding="around-small" >
+                <p>This is Publisher Component</p>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pincode_Mandatory</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(CONTAINS( LOWER(Address__c), &#39;pincode&#39;))</errorConditionFormula>
+    <errorDisplayField>Address__c</errorDisplayField>
+    <errorMessage>Address Should Contain Pincode</errorMessage>
+</ValidationRule>
