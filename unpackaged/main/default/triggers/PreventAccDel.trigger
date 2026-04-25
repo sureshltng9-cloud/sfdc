@@ -1,6 +1,7 @@
 trigger PreventAccDel on Account (before delete) {
     //This is Account triggers
     for(Account acc : [SELECT Id,Rating,Industry FROM Account WHERE Id IN (SELECT AccountId FROM Opportunity) AND Id IN : Trigger.oldMap.keySet()]){
+         //forloop
          trigger.oldMap.get(acc.Id).addError('You Can\'t Delete Account that have Contacts');
     }
 }
